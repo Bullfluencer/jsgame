@@ -1,0 +1,11 @@
+/* css code */
+body {
+margin: 0;
+background-color: grey;
+display: flex;
+justify-content: center;
+font-family: "Courier New", Courier, monospace;
+width: 100vw;
+height: 100vh;
+}
+
