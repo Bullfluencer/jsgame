@@ -8,7 +8,7 @@ const height = 500
 
 const screenWidth = window.screen.width
 const canvasPosition = screenWidth / 2 - width / 2
-const isMobile = window.matchMedia('(max-width: 600px)')
+const isMobile = window.matchMedia('(max-width: 800px)')
 
 const gameOverDiv = document.createElement('div')
 
@@ -55,7 +55,7 @@ let isGameOver = true
 
 const renderCanvas = () => {
     //canvas background
-    context.fillStyle = 'black'
+    context.fillStyle = 'blue'
     context.fillRect( 0, 0, width, height)
 
     //paddle color
@@ -70,8 +70,8 @@ const renderCanvas = () => {
 
     //ball 
     context.beginPath()
-    context.arc(ballX, ballY, ballRadius, 2 * Math.PI, false)
-    context.fillStyle = 'white'
+    context.arc(ballX, ballY, ballRadius, 4 * Math.PI, false)
+    context.fillStyle = 'red'
     context.fill()
 
     //score
